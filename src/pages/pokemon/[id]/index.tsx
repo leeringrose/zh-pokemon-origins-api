@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+
 import { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
 

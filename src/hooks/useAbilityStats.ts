@@ -3,8 +3,8 @@ import axios from 'axios';
 
 const useAbilityStats = (url: string | undefined) => {
 
-  const [ability, setAbility] = useState(null);
-  const [stat, setStat] = useState(null);
+  const [ability, setAbility] = useState<any[]>([]);
+  const [stat, setStat] = useState<any[]>([]);
 
   const fetchAbilityStats = useCallback(async (url: string | undefined) => {
     if (url) {
@@ -12,8 +12,8 @@ const useAbilityStats = (url: string | undefined) => {
         abilities: abilityResult,
         stats: statResult
       } = (await axios.get(url)).data;
-      setAbility(abilityResult);
-      setStat(statResult);
+      setAbility(abilityResult as any[]);
+      setStat(statResult as any[]);
     }
   }, []);
 
