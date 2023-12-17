@@ -1,28 +1,28 @@
-# Create T3 App
+# Technical Test
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Taking the APIs from PokeAPI:
+- https://pokeapi.co/
 
-## What's next? How do I make an app with this?
+We would like you to come up with a fresh clean UI design of displaying the
+individual pokemon and being able to flick through them but also being able to view
+them as a searchable list. We would like to see the ability to click into the pokemon
+and view their abilities.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## What to use??
+Next.js and TailwindCSS
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## What features are we looking for??
+We are looking for the ability to view the Pokemon as a list, and also show the ability
+of lazy loading the pokemon. It should have the ability to click the individual
+Pokemon to show their abilities and stats. We would like to see a search where we
+can filter out the pokemon list to find a Pokemon.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## How long should I take on this??
+We recommend a max of 3 days, to get as much as possible done to showcase your
+skills and ideas on how to display the pokemon.
 
-## Learn More
+## Where to put the project??
+If you can put it in a public github repo and also have the project hosted on something like
+https://www.netlify.com/
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+### Once the technical test is done, please send to chris@heatable.co.uk
