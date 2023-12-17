@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useSearchParams } from 'next/navigation';
 import React from 'react';
 
@@ -14,7 +15,7 @@ const ItemDetail: React.FC = () => {
   const searchParams = useSearchParams();
   const url = searchParams.get('url');
   const mode = searchParams.get('mode');
-  const referenceData = useReference(url!);
+  const referenceData = useReference(url!) as any;
 
   return (
     <PageLayout title='Detail View'>
