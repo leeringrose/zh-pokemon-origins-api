@@ -4,7 +4,6 @@ import dynamic from 'next/dynamic';
 import PageLayout from '@/layouts/PageLayout';
 import SearchBar from '@/components/SearchBar';
 import { filterPokemons } from '@/utils/services';
-
 import { AppContext } from '@/AppContext';
 import usePokemons from '@/hooks/usePokemons';
 

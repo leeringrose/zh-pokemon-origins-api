@@ -14,7 +14,7 @@ const ItemDetail: React.FC = () => {
   const searchParams = useSearchParams();
   const url = searchParams.get('url');
   const mode = searchParams.get('mode');
-  const referenceData = useReference(url);
+  const referenceData = useReference(url!);
 
   return (
     <PageLayout title='Detail View'>

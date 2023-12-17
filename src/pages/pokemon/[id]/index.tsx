@@ -11,13 +11,14 @@ const DetailView = () => {
   const { id } = router.query;
   const { state } = useContext(AppContext);
 
-  useEffect(() => {                       // Redirect to the initial page if redux state is empty
+  // Redirect to the initial page if redux state is empty
+  useEffect(() => {
     if (state.pokemons.length === 0) {
       void router.push('/');
     }
   }, [state]);
 
-  const { ability, stat } = useAbility(state.pokemons.at(parseInt(id))?.url);
+  const { ability, stat } = useAbility(state.pokemons.at(parseInt(id as string))?.url);
 
   return (
     <PageLayout title={'Pokemon Detail'}>

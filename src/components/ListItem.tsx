@@ -6,7 +6,6 @@ import useDetail from '@/hooks/useDetail';
 import CustomSpin from './core/CustomSpin';
 
 const LazyloadedItem: React.FC<{ name: string, url?: string, key: number, id: number }> = ({ name, url, id, ...rest }) => {
-
   const [isPending, setIsPending] = useState(true);
   const { ref, inView } = useInView({ threshold: 0.7, initialInView: true, triggerOnce: true });
   const { abilities, stats } = useDetail(url);
