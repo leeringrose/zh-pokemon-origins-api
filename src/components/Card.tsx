@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ title, url, mode, ...rest }) => {
     <p className='text-gray-700 text-base text-center'>
       <span className='font-bold text-2xl text-red-600 mr-1'>Reference:</span> {url}
     </p>
-    {url && <Link href='/pokemon/[id]/reference?url=[url]&mode=[mode]' as={`/pokemon/${id?.toString()}/reference?url=${encodeURIComponent(url)}&mode=${mode}`}>
+    {url && <Link href='/pokemon/[id]/reference?url=[url]&mode=[mode]' as={`/pokemon/${id}/reference?url=${encodeURIComponent(url)}&mode=${mode}`}>
       <div className='flex items-center justify-center mt-8 text-sm w-full'>
         <Button>See reference</Button>
       </div>
