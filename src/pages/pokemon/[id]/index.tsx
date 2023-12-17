@@ -1,5 +1,3 @@
-'use client';
-
 import { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
@@ -11,10 +9,9 @@ import Card from '@/components/Card';
 const DetailView = () => {
   const router = useRouter();
   const { id } = router.query;
-
   const { state } = useContext(AppContext);
 
-  useEffect(() => {
+  useEffect(() => {                       // Redirect to the initial page if redux state is empty
     if (state.pokemons.length === 0) {
       void router.push('/');
     }
